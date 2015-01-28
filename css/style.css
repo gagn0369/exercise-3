@@ -109,7 +109,7 @@ h1 {
 .toggle-btn {
   position: absolute;
   right: 1em;
-  top: 0; }
+  top: 1em; }
 
 /* line 55, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
 .navigation ul {
