@@ -112,60 +112,62 @@ h1 {
   top: 1em; }
 
 /* line 55, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+.close-btn {
+  top: 1em;
+  left: 0.5em;
+  position: relative; }
+
+/* line 61, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 57, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 63, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .navigation ul li {
     list-style-type: none;
     display: block;
     padding: 0.5em 0.75em;
     text-align: center;
     position: relative; }
-    /* line 63, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 69, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .navigation ul li a {
       text-decoration: none;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       color: #5AB8E8;
       font-size: 1.5em; }
-      /* line 68, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+      /* line 74, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
       .navigation ul li a:hover {
         color: #206DB6; }
 
-/* line 76, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+/* line 82, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
   color: #5AB8E8;
   height: 40px;
   width: 40px; }
-  /* line 80, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 86, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
-  /* line 83, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 89, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
     padding: 0.5em;
     border: 3px solid #5AB8E8; }
-    /* line 86, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 92, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .toggle-btn i:hover, .close-btn i:hover {
       color: #206DB6; }
-  /* line 90, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 96, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .toggle-btn:hover, .close-btn:hover {
     color: #206DB6; }
 
-/* line 95, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
-.close-btn {
-  margin: 1em; }
-
 @media only screen and (max-width: 60em) {
-  /* line 100, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 103, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 106, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 109, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -174,16 +176,16 @@ h1 {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 114, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 117, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 118, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 121, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 125, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 128, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -196,20 +198,20 @@ h1 {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 147, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 154, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 152, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+  /* line 159, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   .navigation ul li {
     display: inline-block;
     padding: 0.5em 0.5em; }
-    /* line 155, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+    /* line 162, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
     .navigation ul li a {
       border-bottom: 1px solid #5AB8E8; }
  }
 
-/* line 165, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
+/* line 172, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
 body.noscript .slide-menu {
   position: static;
   right: auto; }

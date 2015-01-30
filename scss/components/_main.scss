@@ -52,6 +52,12 @@ h1{
   top: 1em;
 }
 
+.close-btn{
+  top: 1em;
+  left: 0.5em;
+  position: relative;
+}
+
 .navigation ul{
   @include zero;
   li{
@@ -92,9 +98,6 @@ h1{
   }
 }
 
-.close-btn{
-  margin: 1em;
-}
 
 @media only screen and (max-width: 60em){
   .site-wrapper{
@@ -138,6 +141,10 @@ h1{
 }//media
 
 //MEDIUM SCREEN STUFF
+
+@media only screen and (min-width: 40em){
+
+}
 
 
 //LARGE SCREEN STUFF 
