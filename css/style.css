@@ -86,7 +86,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: url("../../img/kids.jpg") no-repeat center center fixed;
+  background: url("../img/kids.jpg") no-repeat center center fixed;
   background-size: cover; }
   /* line 26, /Users/madeleinegagne/Desktop/exercise-3/scss/components/main */
   body.noscript .close-btn, body.noscript .toggle-btn {
