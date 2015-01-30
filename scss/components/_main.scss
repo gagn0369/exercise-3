@@ -110,7 +110,7 @@ h1{
         height: 100%;
         position: relative;
         transform: translateX(0);
-        @include ease(all, 300ms, ease-in-out);
+        @include ease(all, 200ms, ease-in);
       }//canvas
 
       &[data-state="slide-open"] .sliding-canvas{
