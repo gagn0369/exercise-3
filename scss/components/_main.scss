@@ -31,7 +31,6 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 99;
 }
 
 header {
@@ -133,7 +132,7 @@ h1{
       bottom: 0;
       right: -100%;
       min-height: 600px;
-      background-color: $brand-transparent;
+      background-color: rgba(0,0,0,.5);
 
     }
 
@@ -144,7 +143,49 @@ h1{
 
 @media only screen and (min-width: 40em){
 
-}
+  @media only screen and (max-width: 60em){
+  .site-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+
+      .sliding-canvas{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateX(0);
+        @include ease(all, 300ms, ease-in-out);
+      }//canvas
+
+      &[data-state="slide-open"] .sliding-canvas{
+        transform: translateX(-100%);
+      }
+
+      &[data-state="slide-open"]{
+        //allows nav to have a scroll bar when open
+        overflow: visible;
+      }
+
+    }//sitewrapper
+
+    .slide-menu{
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: -100%;
+      min-height: 250px;
+      background-color: rgba(0,0,0,.5);
+      float: right;
+
+    }
+
+
+  }//media
+
+} //media query medium screen
 
 
 //LARGE SCREEN STUFF 
